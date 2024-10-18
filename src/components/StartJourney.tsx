@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { abstractLeft, abstractRight } from "../../../assets/dummy";
+import { abstractLeft, abstractRight } from "../assets/dummy";
 
 const StartJourney = () => {
   return (

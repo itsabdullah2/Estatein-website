@@ -38,7 +38,10 @@ export default {
       backgroundImage: {
         banner: "url(./src/data/bannerbg.png)",
       },
-      screens: {},
+      screens: {
+        customSize: { min: "1280px", max: "1550px" },
+        "3xl": { min: "1650px" },
+      },
     },
   },
   plugins: [],

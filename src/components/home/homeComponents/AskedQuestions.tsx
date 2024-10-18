@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Heading from "./Heading";
 import Question from "./Question";
 import { askedQuestionHeadingDescription } from "../../../assets/dummy";
+import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const AskedQuestions = () => {
   return (
@@ -28,14 +29,14 @@ const AskedQuestions = () => {
             <span className="text-white">01</span> of <span>10</span>
           </div>
           <div className="flex items-center gap-[10px]">
-            <button className="w-[58px] h-[58px] rounded-full border border-gray15 text-white hover:bg-gray15 duration-200">
-              AR
+            <button className="flex items-center justify-center w-[58px] h-[58px] rounded-full border border-gray15 text-white hover:bg-gray15 duration-200">
+              <FaArrowLeftLong size={25} />
             </button>
             <div className="text-[14px] lg:text-xl medium text-gray60 block lg:hidden">
               <span className="text-white">01</span> of <span>60</span>
             </div>
-            <button className="w-[58px] h-[58px] rounded-full border border-gray15 text-white hover:bg-gray15 duration-200">
-              AL
+            <button className="flex items-center justify-center w-[58px] h-[58px] rounded-full border border-gray15 text-white hover:bg-gray15 duration-200">
+              <FaArrowRightLong size={25} />
             </button>
           </div>
         </div>

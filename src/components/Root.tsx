@@ -5,6 +5,7 @@ import {
   PropertiesPage,
   ServicesPage,
   ContactUsPage,
+  StartJourney,
   Footer,
 } from "..";
 import { Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ const Root = () => {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
+      <StartJourney />
       <Footer />
     </div>
   );

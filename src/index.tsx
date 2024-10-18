@@ -7,6 +7,7 @@ import Properties from "./components/properties/Properties";
 import Services from "./components/services/Services";
 import ContactUs from "./components/contactUs/ContactUs";
 import Footer from "./components/Footer";
+import StartJourney from "./components/StartJourney";
 // Import Pages
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -24,6 +25,7 @@ export {
   Services,
   ContactUs,
   Footer,
+  StartJourney,
   // Pages
   HomePage,
   AboutUsPage,

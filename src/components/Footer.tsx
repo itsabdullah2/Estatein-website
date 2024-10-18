@@ -122,15 +122,15 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-between flex-col-reverse lg:flex-row bg-gray10 py-5 px-4 lg:py-3 lg:px-20 2x; 2xl:py-4 2xl:px-[162px]">
-        <div className="flex items-center flex-col lg:flex-row gap-5 xl:gap-[38px] text-[14px] xl:text-[18px] font-medium text-white">
+      <div className="flex items-center justify-between flex-col-reverse gap-5 lg:flex-row bg-gray10 py-5 px-4 lg:py-3 lg:px-20 2x; 2xl:py-4 2xl:px-[162px]">
+        <div className="flex items-center flex-col lg:flex-row gap-[10px] lg:gap-5 xl:gap-[38px] text-[14px] xl:text-[18px] font-medium text-white">
           <p>@{year} Estatein. All Rights Reserved.</p>
           <span>Terms & Conditions</span>
         </div>
         <ul className="flex items-center gap-2 xl:gap-[10px]">
           {socialLinks.map((link) => (
             <Link to={link.path} key={link.path}>
-              <li className="flex items-center justify-center w-10 h-10 xl:w-[52px] xl:h-[52px] rounded-full bg-gray08 hover:bg-gray15 duration-200">
+              <li className="flex items-center justify-center w-[60px] h-[60px] xl:w-[52px] xl:h-[52px] rounded-full bg-gray08 hover:bg-gray15 duration-200">
                 <img
                   src={link.icon}
                   alt="Social Icon"

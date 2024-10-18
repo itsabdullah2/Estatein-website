@@ -116,7 +116,6 @@ const Hero = () => {
             src={containerImage}
             alt="abstract"
             className="w-full rounded-xl xl:rounded-none xl:w-auto"
-            loading="lazy"
           />
           <Link to="/properties">
             <img
