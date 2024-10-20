@@ -7,9 +7,9 @@ interface AppStateContextType {
   handleCloseBanner: () => void;
   activePage: string;
   setActivePage: React.Dispatch<React.SetStateAction<string>>;
-  isDropDown: boolean;
-  setIsDropDown: React.Dispatch<React.SetStateAction<boolean>>;
-  handleDropDown: () => void;
+  isMenu: boolean;
+  setIsMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  handleMenu: () => void;
 }
 
 const AppStateContext = createContext<AppStateContextType | null>(null);
@@ -22,13 +22,14 @@ export const AppStateProvider = ({
   const location = useLocation();
   const [isBannerOpen, setIsBannerOpen] = useState<boolean>(true);
   const [activePage, setActivePage] = useState<string>("/");
+  const [isMenu, setIsMenu] = useState<boolean>(false);
   const [isDropDown, setIsDropDown] = useState<boolean>(false);
 
   const handleCloseBanner = (): void => {
     setIsBannerOpen(false);
   };
-  const handleDropDown = (): void => {
-    setIsDropDown((prev: boolean): boolean => !prev);
+  const handleMenu = (): void => {
+    setIsMenu((prev: boolean): boolean => !prev);
   };
 
   useEffect(() => {
@@ -41,9 +42,9 @@ export const AppStateProvider = ({
     handleCloseBanner,
     activePage,
     setActivePage,
-    isDropDown,
-    setIsDropDown,
-    handleDropDown,
+    isMenu,
+    setIsMenu,
+    handleMenu,
   };
 
   return (
