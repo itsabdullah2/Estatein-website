@@ -520,3 +520,13 @@ export const ourClientBox: OurClientsBoxType[] = [
       "Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.",
   },
 ];
+
+interface MenuDataType {
+  item: string;
+}
+
+export const menuDataOfLocation: MenuDataType[] = [];
+export const menuDataOfProperty: MenuDataType[] = [];
+export const menuDataOfPrice: MenuDataType[] = [];
+export const menuDataOfPropertySize: MenuDataType[] = [];
+export const menuDataOfBuildYear: MenuDataType[] = [];
