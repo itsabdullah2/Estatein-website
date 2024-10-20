@@ -8,7 +8,7 @@ const FindYourProperty = () => {
         <h2 className="text-[28px] md:text-[36px] xl:text-5xl font-semibold leading-[150%] text-white">
           Find Your Dream Property
         </h2>
-        <p className="text-[14px] md:text-[16px] xl:text-[18px] font-medium leading-[150%] xl:text-gray60">
+        <p className="text-[14px] md:text-[16px] xl:text-[18px] font-medium leading-[150%] text-gray60">
           {findYourPropertyDescription}
         </p>
       </div>
