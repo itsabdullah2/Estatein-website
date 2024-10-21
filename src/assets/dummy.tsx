@@ -525,8 +525,108 @@ interface MenuDataType {
   item: string;
 }
 
+// todo => will work on it very soon
 export const menuDataOfLocation: MenuDataType[] = [];
 export const menuDataOfProperty: MenuDataType[] = [];
 export const menuDataOfPrice: MenuDataType[] = [];
 export const menuDataOfPropertySize: MenuDataType[] = [];
 export const menuDataOfBuildYear: MenuDataType[] = [];
+
+export const discoverThePossibilities: string =
+  "Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home";
+
+interface PossibilitiesBoxType {
+  image: string;
+  tagline: string;
+  heading: string;
+  description: string;
+  price: string;
+}
+
+export const possibilitiesBox: PossibilitiesBoxType[] = [
+  {
+    image: firstFeature,
+    tagline: "Coastal Escapes - Where Waves Beckon",
+    heading: "Seaside Serenity Villa",
+    description:
+      "Wake up to the soothing melody of waves. This beachfront villa offers...",
+    price: "1,250,000",
+  },
+  {
+    image: secondFeature,
+    tagline: "Urban Oasis - Life in the Heart of the City",
+    heading: "Metropolitan Haven",
+    description:
+      "Immerse yourself in the energy of the city. This modern apartment in the heart...",
+    price: "650,000",
+  },
+  {
+    image: thirdFeature,
+    tagline: "Countryside Charm - Escape to Nature's Embrace",
+    heading: "Rustic Retreat Cottage",
+    description:
+      "Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...",
+    price: "350,000",
+  },
+];
+
+export const makeItHappenDescription: string =
+  "Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together.";
+
+interface InputFieldsType {
+  label: string;
+  placeholder: string;
+  id: string;
+  type: string;
+}
+
+export const inputFields: InputFieldsType[] = [
+  {
+    label: "First Name",
+    placeholder: "Enter First Name",
+    id: "firstName",
+    type: "text",
+  },
+  {
+    label: "Last Name",
+    placeholder: "Enter Last Name",
+    id: "lastName",
+    type: "text",
+  },
+  {
+    label: "Email",
+    placeholder: "Enter Your Email",
+    id: "email",
+    type: "email",
+  },
+  {
+    label: "Phone",
+    placeholder: "Enter Phone Number",
+    id: "phone",
+    type: "number",
+  },
+];
+
+interface PropertyOptionsType {
+  label: string;
+  placeholder: string;
+}
+
+export const propertyOptions: PropertyOptionsType[] = [
+  {
+    label: "Prefered Location",
+    placeholder: "Select Location",
+  },
+  {
+    label: "Property Type",
+    placeholder: "Select Property Type",
+  },
+  {
+    label: "No. of Bathrooms",
+    placeholder: "Select no. of Bathrooms",
+  },
+  {
+    label: "No. of Bedrooms",
+    placeholder: "Select no. of Bedrooms",
+  },
+];
