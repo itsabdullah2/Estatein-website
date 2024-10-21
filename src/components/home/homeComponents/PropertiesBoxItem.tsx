@@ -33,7 +33,7 @@ const PropertiesBoxItem = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-[30px] lg:gap-10 xl:gap-[50px]">
         <div className="flex flex-col">
           <span className="text-[14px] lg:text-[18px] font-medium text-gray60">
             Price
@@ -44,7 +44,7 @@ const PropertiesBoxItem = () => {
         </div>
         <Link
           to="/"
-          className="text-[14px] lg:text-[18px] font-medium text-white bg-purple60 py-[14px] lg:py-[18px] px-5 lg:px-[54.5px] rounded-[10px] hover:bg-purple65 duration-200"
+          className="flex-1 text-[14px] lg:text-[18px] font-medium text-center text-white bg-purple60 py-[14px] lg:py-[18px] px-5  rounded-[10px] hover:bg-purple65 duration-200"
         >
           {item.urlPath}
         </Link>

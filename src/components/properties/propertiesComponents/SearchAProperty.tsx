@@ -19,7 +19,7 @@ const SearchAProperty = () => {
   return (
     <div className="flex flex-col gap-5 md:gap-[12px] xl:gap-[10px] mt-10 mb-[61px] md:mt-0 relative md:top-[-52.5px]">
       <div className="py-5 px-5 lg:py-[10px] lg:px-[10px] bg-gray10 rounded-[20px] lg:mx-12">
-        <div className="flex items-center gap-5 md:gap-[30px] lg:gap-[50px] py-[10px] px-[12px] md:py-5 md:px-6 rounded-xl border border-gray15">
+        <div className="flex items-center gap-5 md:gap-[30px] lg:gap-[50px] py-[10px] px-[12px] md:py-5 md:px-6 rounded-xl border border-gray15 bg-gray08">
           <input
             type="search"
             placeholder="Search For A Property"

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../CommonHeading";
 import {
   ourClientsDescription,
   ourClientBox,
@@ -85,7 +85,7 @@ const OurClients = () => {
         <div className="text-xl medium text-gray60 hidden md:block">
           <span className="text-white">01</span> of <span>10</span>
         </div>
-        <div className="flex-1 md:flex-auto flex items-center justify-between gap-[10px]">
+        <div className="flex-1 md:flex-none flex items-center justify-between gap-[10px]">
           <button className="flex items-center justify-center w-[58px] h-[58px] rounded-full border border-gray15 text-white hover:bg-gray15 duration-200">
             <FaArrowLeftLong size={25} />
           </button>

@@ -1,4 +1,4 @@
-import { headingStars } from "../../../assets/dummy";
+import { headingStars } from "../assets/dummy";
 
 interface Props {
   title: string;
@@ -6,7 +6,7 @@ interface Props {
   className?: string;
 }
 
-const SectionHeading = ({ className, title, description }: Props) => {
+const CommonHeading = ({ className, title, description }: Props) => {
   return (
     <div className={`${className}`}>
       <img
@@ -24,4 +24,4 @@ const SectionHeading = ({ className, title, description }: Props) => {
   );
 };
 
-export default SectionHeading;
+export default CommonHeading;
