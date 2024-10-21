@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../../CommonHeading";
 import {
   meetOurTeamDescription,
   teamMemberBox,
