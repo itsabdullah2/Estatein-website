@@ -1,3 +1,6 @@
+// Import Icons
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 // Import Images
 import bannerbg from "./images/banner.png";
 import logo from "./images/Logo.png";
@@ -41,6 +44,7 @@ import thirdFeature from "./images/feature-3.png";
 import firstClient from "./images/client-1.png";
 import secondClient from "./images/client-2.png";
 import thirdClient from "./images/client-3.png";
+import { ReactElement } from "react";
 
 export {
   bannerbg,
@@ -603,7 +607,7 @@ export const inputFields: InputFieldsType[] = [
     label: "Phone",
     placeholder: "Enter Phone Number",
     id: "phone",
-    type: "number",
+    type: "text",
   },
 ];
 
@@ -614,7 +618,7 @@ interface PropertyOptionsType {
 
 export const propertyOptions: PropertyOptionsType[] = [
   {
-    label: "Prefered Location",
+    label: "Preferred Location",
     placeholder: "Select Location",
   },
   {
