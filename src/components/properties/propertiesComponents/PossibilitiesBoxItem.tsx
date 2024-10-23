@@ -41,7 +41,7 @@ const PossibilitiesBoxItem = () => {
             </h4>
           </div>
           <Link
-            to="/properties/details"
+            to={`/properties/${item.id}`}
             className="flex-1 text-center py-[10px] md:py-[14px] px-5 xl:py-[18px] xl:px-[24px] rounded-lg bg-purple60 text-white font-medium text-[14px] 3xl:text-[18px] hover:bg-purple65"
           >
             View Property Details
