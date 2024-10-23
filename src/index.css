@@ -14,3 +14,41 @@ body {
   font-family: "Urbanist", sans-serif;
   overflow-x: hidden;
 }
+
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #262626;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.custom-checkbox::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: white;
+  display: none;
+}
+.custom-checkbox:hover {
+  background-color: #1a1a1a;
+}
+.custom-checkbox:checked {
+  background-color: #1a1a1a;
+}
+.custom-checkbox:checked::after {
+  display: block;
+}
+
+@media (min-width: 1536px) {
+  .custom-checkbox {
+    height: 28px;
+    width: 28px;
+  }
+}
