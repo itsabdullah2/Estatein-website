@@ -1,4 +1,5 @@
 import CommonHeading from "../../CommonHeading";
+import CustomCheckbox from "../../CustomCheckbox";
 import {
   inputFields,
   makeItHappenDescription,
@@ -103,8 +104,11 @@ const MakeItHappen = () => {
           </div>
           <div className="flex items-center lg:justify-between flex-col lg:flex-row gap-5 lg:gap-0">
             <div className="flex items-center gap-[6px] 2xl:gap-[10px]">
-              <input type="checkbox" id="terms" />
-              <label className="text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium leading-[150%] text-gray60">
+              <CustomCheckbox id="terms" />
+              <label
+                htmlFor="terms"
+                className="text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium leading-[150%] text-gray60"
+              >
                 I agree with Term of Use and Privacy Policy
               </label>
             </div>
