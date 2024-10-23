@@ -8,12 +8,14 @@ import Services from "./components/services/Services";
 import ContactUs from "./components/contactUs/ContactUs";
 import Footer from "./components/Footer";
 import StartJourney from "./components/StartJourney";
+import CustomCheckbox from "./components/CustomCheckbox";
 // Import Pages
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import PropertiesPage from "./pages/PropertiesPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import DetailsPage from "./pages/DetailsPage";
 
 export {
   // Components
@@ -26,10 +28,12 @@ export {
   ContactUs,
   Footer,
   StartJourney,
+  CustomCheckbox,
   // Pages
   HomePage,
   AboutUsPage,
   PropertiesPage,
   ServicesPage,
   ContactUsPage,
+  DetailsPage,
 };
