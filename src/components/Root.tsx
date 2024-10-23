@@ -7,6 +7,7 @@ import {
   ContactUsPage,
   StartJourney,
   Footer,
+  DetailsPage,
 } from "..";
 import { Routes, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ const Root = () => {
         <Route path="/properties" element={<PropertiesPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/properties/:name" element={<DetailsPage />} />
       </Routes>
       <StartJourney />
       <Footer />
