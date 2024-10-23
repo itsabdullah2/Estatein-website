@@ -4,7 +4,6 @@ import {
   circularImage,
   encourage,
 } from "../../../assets/dummy";
-
 interface BoxesType {
   number: string;
   title: string;
