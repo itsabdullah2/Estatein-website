@@ -1,14 +1,9 @@
 import { Link } from "react-router-dom";
 import {
   containerImage,
-  arrow,
-  iconOne,
-  iconTwo,
-  iconThree,
-  iconFour,
   circularImage,
+  encourage,
 } from "../../../assets/dummy";
-
 interface BoxesType {
   number: string;
   title: string;
@@ -30,35 +25,6 @@ const boxes: BoxesType[] = [
     number: "16+",
     title: "Years of Experience",
     twoCols: true,
-  },
-];
-
-interface EncourageType {
-  arrow: string;
-  icon: string;
-  title: string;
-}
-
-const encourage: EncourageType[] = [
-  {
-    arrow: arrow,
-    icon: iconOne,
-    title: "Find Your Dream Home",
-  },
-  {
-    arrow: arrow,
-    icon: iconTwo,
-    title: "Unlock Property Value",
-  },
-  {
-    arrow: arrow,
-    icon: iconThree,
-    title: "Effortless Property Management",
-  },
-  {
-    arrow: arrow,
-    icon: iconFour,
-    title: "Smart Investments, Informed Decisions",
   },
 ];
 
