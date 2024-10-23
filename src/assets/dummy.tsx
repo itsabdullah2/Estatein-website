@@ -1,6 +1,3 @@
-// Import Icons
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 // Import Images
 import bannerbg from "./images/banner.png";
 import logo from "./images/Logo.png";
@@ -44,7 +41,6 @@ import thirdFeature from "./images/feature-3.png";
 import firstClient from "./images/client-1.png";
 import secondClient from "./images/client-2.png";
 import thirdClient from "./images/client-3.png";
-import { ReactElement } from "react";
 
 export {
   bannerbg,
@@ -105,6 +101,35 @@ export const navItems: NavItems[] = [
     name: "Contact Us",
     path: "/contact-us",
     isContact: true,
+  },
+];
+
+interface EncourageType {
+  arrow: string;
+  icon: string;
+  title: string;
+}
+
+export const encourage: EncourageType[] = [
+  {
+    arrow: arrow,
+    icon: iconOne,
+    title: "Find Your Dream Home",
+  },
+  {
+    arrow: arrow,
+    icon: iconTwo,
+    title: "Unlock Property Value",
+  },
+  {
+    arrow: arrow,
+    icon: iconThree,
+    title: "Effortless Property Management",
+  },
+  {
+    arrow: arrow,
+    icon: iconFour,
+    title: "Smart Investments, Informed Decisions",
   },
 ];
 
@@ -540,6 +565,7 @@ export const discoverThePossibilities: string =
   "Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home";
 
 interface PossibilitiesBoxType {
+  id: string;
   image: string;
   tagline: string;
   heading: string;
@@ -549,6 +575,7 @@ interface PossibilitiesBoxType {
 
 export const possibilitiesBox: PossibilitiesBoxType[] = [
   {
+    id: "1",
     image: firstFeature,
     tagline: "Coastal Escapes - Where Waves Beckon",
     heading: "Seaside Serenity Villa",
@@ -557,6 +584,7 @@ export const possibilitiesBox: PossibilitiesBoxType[] = [
     price: "1,250,000",
   },
   {
+    id: "2",
     image: secondFeature,
     tagline: "Urban Oasis - Life in the Heart of the City",
     heading: "Metropolitan Haven",
@@ -565,6 +593,7 @@ export const possibilitiesBox: PossibilitiesBoxType[] = [
     price: "650,000",
   },
   {
+    id: "3",
     image: thirdFeature,
     tagline: "Countryside Charm - Escape to Nature's Embrace",
     heading: "Rustic Retreat Cottage",
