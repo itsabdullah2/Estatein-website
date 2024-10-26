@@ -1,5 +1,5 @@
 import ElevateYourExperience from "./servicesComponents/ElevateYourExperience";
-import Encourage from "./servicesComponents/encourage";
+import Encourage from "./servicesComponents/Encourage";
 import UnlockProperty from "./servicesComponents/UnlockProperty";
 import EffortlessManagement from "./servicesComponents/EffortlessManagement";
 import SmartInvestment from "./servicesComponents/SmartInvestment";

@@ -53,7 +53,7 @@ const Header = () => {
           </ul>
         </nav>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="hidden lg:block py-[14px] px-6 rounded-[10px] bg-gray08 border border-gray15 font-medium text-[18px]"
         >
           Contact Us
