@@ -52,9 +52,12 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <button className="hidden lg:block py-[14px] px-6 rounded-[10px] bg-gray08 border border-gray15 font-medium text-[18px]">
+        <Link
+          to="/contact"
+          className="hidden lg:block py-[14px] px-6 rounded-[10px] bg-gray08 border border-gray15 font-medium text-[18px]"
+        >
           Contact Us
-        </button>
+        </Link>
         <button className="block lg:hidden" onClick={handleMenu}>
           <HiBars3BottomRight className="w-7 h-7" />
         </button>
