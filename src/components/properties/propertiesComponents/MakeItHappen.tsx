@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CommonHeading from "../../CommonHeading";
 import CustomCheckbox from "../../CustomCheckbox";
 import {
@@ -109,7 +110,14 @@ const MakeItHappen = () => {
                 htmlFor="terms"
                 className="text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium leading-[150%] text-gray60"
               >
-                I agree with Term of Use and Privacy Policy
+                I agree with{" "}
+                <Link to="/" className="underline">
+                  Term of Use
+                </Link>{" "}
+                and{" "}
+                <Link to="/" className="underline">
+                  Privacy Policy
+                </Link>
               </label>
             </div>
             <button className="text-[14px] 2xl:text-[18px] leading-6 font-medium text-white bg-purple60 w-full lg:w-auto py-[14px] px-[34px] 2xl:py-[18px] 2xl:px-[46px] rounded-md 2xl:rounded-lg hover:bg-purple65 duration-200">
