@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+} from "react";
 import { useLocation } from "react-router-dom";
 
 interface AppStateContextType {
@@ -10,6 +16,8 @@ interface AppStateContextType {
   isMenu: boolean;
   setIsMenu: React.Dispatch<React.SetStateAction<boolean>>;
   handleMenu: () => void;
+  isFilterItemActive: string;
+  handleFilterItem: (filter: string) => void;
 }
 
 const AppStateContext = createContext<AppStateContextType | null>(null);
@@ -23,7 +31,8 @@ export const AppStateProvider = ({
   const [isBannerOpen, setIsBannerOpen] = useState<boolean>(true);
   const [activePage, setActivePage] = useState<string>("/");
   const [isMenu, setIsMenu] = useState<boolean>(false);
-  const [isDropDown, setIsDropDown] = useState<boolean>(false);
+  // const [isDropDown, setIsDropDown] = useState<boolean>(false);
+  const [isFilterItemActive, setIsFilterItemActive] = useState<string>("All");
 
   const handleCloseBanner = (): void => {
     setIsBannerOpen(false);
@@ -31,6 +40,10 @@ export const AppStateProvider = ({
   const handleMenu = (): void => {
     setIsMenu((prev: boolean): boolean => !prev);
   };
+
+  const handleFilterItem = useCallback((filterItem: string): void => {
+    setIsFilterItemActive(filterItem);
+  }, []);
 
   useEffect(() => {
     setActivePage(location.pathname);
@@ -45,6 +58,8 @@ export const AppStateProvider = ({
     isMenu,
     setIsMenu,
     handleMenu,
+    isFilterItemActive,
+    handleFilterItem,
   };
 
   return (

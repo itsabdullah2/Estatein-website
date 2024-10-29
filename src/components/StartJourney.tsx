@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { abstractLeft, abstractRight } from "../assets/dummy";
 
 const StartJourney = () => {
@@ -18,12 +17,12 @@ const StartJourney = () => {
             assistance.
           </p>
         </div>
-        <Link
-          to="/properties"
+        <a
+          href="/properties#find-property"
           className="text-[14px] xl:text-[18px] font-medium text-white bg-purple60 rounded-lg py-[14px] px-5 text-center w-full md:w-fit hover:bg-purple65 duration-200"
         >
           Explore Properties
-        </Link>
+        </a>
       </div>
       <img
         src={abstractLeft}
