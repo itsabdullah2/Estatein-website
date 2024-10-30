@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 // import icons
 import {
   MdOutlineKeyboardArrowDown,
@@ -21,9 +22,24 @@ import fourthSmartIcon from "./images/smart-icon-4.png";
 
 import abstract from "./images/unlock-abstract.png";
 import smallAbstract from "./images/smart-abstract.png";
-import { ReactElement } from "react";
+import gallery1 from "./images/gallary-1.png";
+import gallery2 from "./images/gallary-2.png";
+import gallery3 from "./images/gallary-3.png";
+import gallery4 from "./images/gallary-6.png";
+import gallerySmall1 from "./images/gallary-4-small.png";
+import gallerySmall2 from "./images/gallary-5-small.png";
+import abstractGallery from "./images/abstract-gallary.png";
+import abstractGalleryMobile from "./images/abstract-gallary-mobile.png";
 
-export { abstract, smallAbstract };
+export {
+  abstract,
+  smallAbstract,
+  abstractGallery,
+  abstractGalleryMobile,
+  gallerySmall1,
+  gallerySmall2,
+  gallery4,
+};
 
 interface CommonBoxesType {
   icon: string;
@@ -216,5 +232,21 @@ export const discoverOfficeBox: DiscoverOfficeBoxType[] = [
     mailIcon: <MdEmail size={25} className="text-white" />,
     phoneIcon: <MdLocalPhone size={25} className="text-white" />,
     locationIcon: <MdLocationOn size={25} className="text-white" />,
+  },
+];
+
+interface GalleryType {
+  image: string;
+}
+
+export const images: GalleryType[] = [
+  {
+    image: gallery1,
+  },
+  {
+    image: gallery2,
+  },
+  {
+    image: gallery3,
   },
 ];
