@@ -12,7 +12,7 @@ const CommonHeading = ({ className, title, description }: Props) => {
       <img
         src={headingStars}
         alt="Heading Stars"
-        className="w-[68.4px] h-[30px] -translate-x-[10px]"
+        className="-translate-x-[10px]"
       />
       <h2 className="text-[28px] lg:text-5xl font-semibold text-white mt-[10px] mb-[14px]">
         {title}
