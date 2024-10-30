@@ -12,6 +12,7 @@ import iconTwo from "./images/icon-2.png";
 import iconThree from "./images/icon-3.png";
 import iconFour from "./images/icon-4.png";
 import headingStars from "./images/heading-stars.png";
+import headingStars1 from "./images/heading-stars-1.png";
 import circularImage from "./images/circular-image.png";
 import bedroomIcon from "./images/bedroom-icon.png";
 import bathroomIcon from "./images/bathroom-icon.png";
@@ -72,6 +73,7 @@ export {
   twitterIcon,
   domainIcon,
   categoryIcon,
+  headingStars1,
 };
 
 interface NavItems {
