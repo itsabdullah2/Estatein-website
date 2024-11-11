@@ -6,7 +6,7 @@ import {
   domainIcon,
   categoryIcon,
 } from "../../../assets/dummy";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+// import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const OurClients = () => {
   return (
@@ -81,7 +81,7 @@ const OurClients = () => {
           </div>
         ))}
       </div>
-      
+
       {/* <div className="flex items-center md:justify-between pt-5 mt-[30px] md:mt-10 xl:mt-[50px] md:border-t border-gray15">
         <div className="text-xl medium text-gray60 hidden md:block">
           <span className="text-white">01</span> of <span>10</span>

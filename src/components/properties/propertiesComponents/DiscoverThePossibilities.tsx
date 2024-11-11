@@ -1,7 +1,7 @@
 import CommonHeading from "../../CommonHeading";
 import { discoverThePossibilities } from "../../../assets/dummy";
 import PossibilitiesBoxItem from "./PossibilitiesBoxItem";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+// import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const DiscoverThePossibilities = () => {
   return (
