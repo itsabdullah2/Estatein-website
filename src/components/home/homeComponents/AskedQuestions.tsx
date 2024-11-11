@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Heading from "./Heading";
 import Question from "./Question";
 import { askedQuestionHeadingDescription } from "../../../assets/dummy";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+// import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const AskedQuestions = () => {
   return (
