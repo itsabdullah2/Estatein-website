@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Heading from "./Heading";
 import { testimonialHeadingDescription } from "../../../assets/dummy";
 import TestimonialItem from "./TestimonialItem";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+// import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const Testimonials = () => {
   return (
@@ -16,7 +16,8 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         <TestimonialItem />
       </div>
-      <div className="mt-[50px]">
+
+      {/* <div className="mt-[50px]">
         <div className="flex items-center justify-between pt-5 border-t border-gray15">
           <Link
             to="/testimonials"
@@ -39,7 +40,7 @@ const Testimonials = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
