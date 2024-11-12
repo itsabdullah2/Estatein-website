@@ -139,6 +139,7 @@ export const featuredPropertiesDesc: string =
   'Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.';
 
 interface BoxItemType {
+  id: string;
   image: string;
   title: string;
   description: string;
@@ -152,6 +153,7 @@ interface BoxItemType {
 
 export const PropertiesBoxItems: BoxItemType[] = [
   {
+    id: "1",
     image: firstFeature,
     title: "Seaside Serenity Villa",
     description:
@@ -174,6 +176,7 @@ export const PropertiesBoxItems: BoxItemType[] = [
     urlPath: "View Property Details",
   },
   {
+    id: "2",
     image: secondFeature,
     title: "Metropolitan Haven",
     description:
@@ -196,6 +199,7 @@ export const PropertiesBoxItems: BoxItemType[] = [
     urlPath: "View Property Details",
   },
   {
+    id: "3",
     image: thirdFeature,
     title: "Rustic Retreat Cottage",
     description:
