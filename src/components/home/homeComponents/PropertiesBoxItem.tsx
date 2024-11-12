@@ -43,7 +43,7 @@ const PropertiesBoxItem = () => {
           </span>
         </div>
         <Link
-          to="/"
+          to={`/properties/${item.id}`}
           className="flex-1 text-[14px] lg:text-[18px] font-medium text-center text-white bg-purple60 py-[14px] lg:py-[18px] px-5  rounded-[10px] hover:bg-purple65 duration-200"
         >
           {item.urlPath}
