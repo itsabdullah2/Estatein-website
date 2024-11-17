@@ -21,7 +21,7 @@ const Root = () => {
         <Route path="/properties" element={<PropertiesPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/properties/:name" element={<DetailsPage />} />
+        <Route path="/properties/property-details" element={<DetailsPage />} />
       </Routes>
       <StartJourney />
       <Footer />
