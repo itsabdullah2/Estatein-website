@@ -20,7 +20,10 @@ const PropertiesBoxItem = () => {
       </div>
       <div className="flex items-center flex-wrap gap-[10px]">
         {item.includes.map((include) => (
-          <div className="flex items-center gap-1 bg-gray10 border border-gray15 rounded-[28px] py-2 px-[14px]">
+          <div
+            key={include.spanText}
+            className="flex items-center gap-1 bg-gray10 border border-gray15 rounded-[28px] py-2 px-[14px]"
+          >
             <img
               src={include.icon}
               alt={include.spanText}
@@ -43,7 +46,7 @@ const PropertiesBoxItem = () => {
           </span>
         </div>
         <Link
-          to={`/properties/${item.id}`}
+          to={`/properties/property-details`}
           className="flex-1 text-[14px] lg:text-[18px] font-medium text-center text-white bg-purple60 py-[14px] lg:py-[18px] px-5  rounded-[10px] hover:bg-purple65 duration-200"
         >
           {item.urlPath}
