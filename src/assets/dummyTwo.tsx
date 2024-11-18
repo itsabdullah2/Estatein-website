@@ -250,3 +250,15 @@ export const images: GalleryType[] = [
     image: gallery3,
   },
 ];
+
+export const propertyDetailsGallery: string[] = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+];

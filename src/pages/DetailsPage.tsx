@@ -1,5 +1,11 @@
+import { PropertyDetails } from "../";
+
 const DetailsPage = () => {
-  return <div>Details Page</div>;
+  return (
+    <>
+      <PropertyDetails />
+    </>
+  );
 };
 
 export default DetailsPage;

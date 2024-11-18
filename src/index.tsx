@@ -1,39 +1,19 @@
 // Import Components
-import Banner from "./components/Banner";
-import Header from "./components/Header";
-import Home from "./components/home/Home";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Properties from "./components/properties/Properties";
-import Services from "./components/services/Services";
-import ContactUs from "./components/contactUs/ContactUs";
-import Footer from "./components/Footer";
-import StartJourney from "./components/StartJourney";
-import CustomCheckbox from "./components/CustomCheckbox";
+export { default as Banner } from "./components/Banner";
+export { default as Header } from "./components/Header";
+export { default as Home } from "./components/home/Home";
+export { default as AboutUs } from "./components/aboutUs/AboutUs";
+export { default as Properties } from "./components/properties/Properties";
+export { default as Services } from "./components/services/Services";
+export { default as ContactUs } from "./components/contactUs/ContactUs";
+export { default as Footer } from "./components/Footer";
+export { default as StartJourney } from "./components/StartJourney";
+export { default as CustomCheckbox } from "./components/CustomCheckbox";
+export { default as PropertyDetails } from "./components/details/PropertyDetails";
 // Import Pages
-import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
-import PropertiesPage from "./pages/PropertiesPage";
-import ServicesPage from "./pages/ServicesPage";
-import ContactUsPage from "./pages/ContactUsPage";
-import DetailsPage from "./pages/DetailsPage";
-
-export {
-  // Components
-  Banner,
-  Header,
-  Home,
-  AboutUs,
-  Properties,
-  Services,
-  ContactUs,
-  Footer,
-  StartJourney,
-  CustomCheckbox,
-  // Pages
-  HomePage,
-  AboutUsPage,
-  PropertiesPage,
-  ServicesPage,
-  ContactUsPage,
-  DetailsPage,
-};
+export { default as HomePage } from "./pages/HomePage";
+export { default as AboutUsPage } from "./pages/AboutUsPage";
+export { default as PropertiesPage } from "./pages/PropertiesPage";
+export { default as ServicesPage } from "./pages/ServicesPage";
+export { default as ContactUsPage } from "./pages/ContactUsPage";
+export { default as DetailsPage } from "./pages/DetailsPage";
