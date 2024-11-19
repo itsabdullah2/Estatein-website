@@ -22,14 +22,34 @@ import fourthSmartIcon from "./images/smart-icon-4.png";
 
 import abstract from "./images/unlock-abstract.png";
 import smallAbstract from "./images/smart-abstract.png";
-import gallery1 from "./images/gallary-1.png";
-import gallery2 from "./images/gallary-2.png";
-import gallery3 from "./images/gallary-3.png";
-import gallery4 from "./images/gallary-6.png";
-import gallerySmall1 from "./images/gallary-4-small.png";
-import gallerySmall2 from "./images/gallary-5-small.png";
-import abstractGallery from "./images/abstract-gallary.png";
-import abstractGalleryMobile from "./images/abstract-gallary-mobile.png";
+import gallery1 from "./images/gallery-1.png";
+import gallery2 from "./images/gallery-2.png";
+import gallery3 from "./images/gallery-3.png";
+import gallery4 from "./images/gallery-6.png";
+import gallerySmall1 from "./images/gallery-4-small.png";
+import gallerySmall2 from "./images/gallery-5-small.png";
+import abstractGallery from "./images/abstract-gallery.png";
+import abstractGalleryMobile from "./images/abstract-gallery-mobile.png";
+import house1 from "./images/house-1.jpg";
+import houseLarge1 from "./images/house-1-large.jpg";
+import house2 from "./images/house-2.jpg";
+import houseLarge2 from "./images/house-2-large.jpg";
+import house3 from "./images/house-3.jpg";
+import houseLarge3 from "./images/house-3-large.jpg";
+import house4 from "./images/house-4.jpg";
+import houseLarge4 from "./images/house-4-large.jpg";
+import house5 from "./images/house-5.jpg";
+import houseLarge5 from "./images/house-5-large.jpg";
+import house6 from "./images/house-6.jpg";
+import houseLarge6 from "./images/house-6-large.jpg";
+import house7 from "./images/house-7.jpg";
+import houseLarge7 from "./images/house-7-large.jpg";
+import house8 from "./images/house-8.jpg";
+import houseLarge8 from "./images/house-8-large.jpg";
+import house9 from "./images/house-9.jpg";
+import houseLarge9 from "./images/house-9-large.jpg";
+// import house10 from "./images/house-10.jpg";
+// import houseLarge10 from "./images/house-10-large.jpg";
 
 export {
   abstract,
@@ -39,6 +59,15 @@ export {
   gallerySmall1,
   gallerySmall2,
   gallery4,
+  houseLarge1,
+  houseLarge2,
+  houseLarge3,
+  houseLarge4,
+  houseLarge5,
+  houseLarge6,
+  houseLarge7,
+  houseLarge8,
+  houseLarge9,
 };
 
 interface CommonBoxesType {
@@ -252,13 +281,13 @@ export const images: GalleryType[] = [
 ];
 
 export const propertyDetailsGallery: string[] = [
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
+  house1,
+  house2,
+  house3,
+  house4,
+  house5,
+  house6,
+  house7,
+  house8,
+  house9,
 ];
