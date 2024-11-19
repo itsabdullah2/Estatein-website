@@ -6,6 +6,7 @@ import {
   useCallback,
 } from "react";
 import { useLocation } from "react-router-dom";
+import house1 from "../assets/images/house-1.jpg";
 
 interface AppStateContextType {
   isBannerOpen: boolean;
@@ -18,6 +19,8 @@ interface AppStateContextType {
   handleMenu: () => void;
   isFilterItemActive: string;
   handleFilterItem: (filter: string) => void;
+  isImgActive: string;
+  handleActiveImg: (img: string) => void;
 }
 
 const AppStateContext = createContext<AppStateContextType | null>(null);
@@ -33,6 +36,7 @@ export const AppStateProvider = ({
   const [isMenu, setIsMenu] = useState<boolean>(false);
   // const [isDropDown, setIsDropDown] = useState<boolean>(false);
   const [isFilterItemActive, setIsFilterItemActive] = useState<string>("All");
+  const [isImgActive, setIsImgActive] = useState<string>(house1);
 
   const handleCloseBanner = (): void => {
     setIsBannerOpen(false);
@@ -44,6 +48,9 @@ export const AppStateProvider = ({
   const handleFilterItem = useCallback((filterItem: string): void => {
     setIsFilterItemActive(filterItem);
   }, []);
+  const handleActiveImg = (img: string): void => {
+    setIsImgActive(img);
+  };
 
   useEffect(() => {
     setActivePage(location.pathname);
@@ -60,6 +67,8 @@ export const AppStateProvider = ({
     handleMenu,
     isFilterItemActive,
     handleFilterItem,
+    isImgActive,
+    handleActiveImg,
   };
 
   return (
