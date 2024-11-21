@@ -48,6 +48,10 @@ import house8 from "./images/house-8.jpg";
 import houseLarge8 from "./images/house-8-large.jpg";
 import house9 from "./images/house-9.jpg";
 import houseLarge9 from "./images/house-9-large.jpg";
+import bedRoomIcon from "./images/black-bedroom-icon.png";
+import bathRoomIcon from "./images/black-bathroom-icon.png";
+import AreaIcon from "./images/area-icon.png";
+import featureIcon from "./images/feature-icon.png";
 // import house10 from "./images/house-10.jpg";
 // import houseLarge10 from "./images/house-10-large.jpg";
 
@@ -290,4 +294,70 @@ export const propertyDetailsGallery: string[] = [
   house7,
   house8,
   house9,
+];
+
+interface PropertyDetailsDescriptionType {
+  id: string;
+  icon: string;
+  category: string;
+  numberOfRooms: string;
+  twoColumns: boolean;
+}
+
+export const propertyDetailsDescription: PropertyDetailsDescriptionType[] = [
+  {
+    id: "1",
+    icon: bedRoomIcon,
+    category: "Bedrooms",
+    numberOfRooms: "04",
+    twoColumns: false,
+  },
+  {
+    id: "2",
+    icon: bathRoomIcon,
+    category: "Bathrooms",
+    numberOfRooms: "03",
+    twoColumns: false,
+  },
+  {
+    id: "3",
+    icon: AreaIcon,
+    category: "Area",
+    numberOfRooms: "2,500 Square Feet",
+    twoColumns: true,
+  },
+];
+
+interface PropertyDetailsKeyFeatureType {
+  id: string;
+  icon: string;
+  feature: string;
+}
+export const propertyDetailsKeyFeature: PropertyDetailsKeyFeatureType[] = [
+  {
+    id: "1",
+    icon: featureIcon,
+    feature: "Expansive oceanfront terrace for outdoor entertaining",
+  },
+  {
+    id: "2",
+    icon: featureIcon,
+    feature: "Gourmet kitchen with top-of-the-line appliances",
+  },
+  {
+    id: "3",
+    icon: featureIcon,
+    feature: "Private beach access for morning strolls and sunset views",
+  },
+  {
+    id: "4",
+    icon: featureIcon,
+    feature:
+      "Master suite with a spa-inspired bathroom and ocean-facing balcony",
+  },
+  {
+    id: "5",
+    icon: featureIcon,
+    feature: "Private garage and ample storage space",
+  },
 ];
