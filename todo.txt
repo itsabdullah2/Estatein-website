@@ -1,0 +1,4 @@
+== ToDo ==
+  => Property Details Page
+    => The responsiveness side of select active image section []
+    => The second active image should be different []
