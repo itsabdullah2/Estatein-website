@@ -361,3 +361,130 @@ export const propertyDetailsKeyFeature: PropertyDetailsKeyFeatureType[] = [
     feature: "Private garage and ample storage space",
   },
 ];
+
+interface PriceDetailsType {
+  id: number;
+  itemTitle: string;
+  itemPrice: string;
+  itemDescription: string;
+  oneCol?: boolean;
+}
+export const additionalFees: PriceDetailsType[] = [
+  {
+    id: 1,
+    itemTitle: "Property Transfer Tax",
+    itemPrice: "$25,000",
+    itemDescription: "Based on the sale price and local regulations",
+    oneCol: false,
+  },
+  {
+    id: 2,
+    itemTitle: "Legal Fees",
+    itemPrice: "$3,000",
+    itemDescription:
+      "Approximate cost for legal services, including title transfer",
+    oneCol: false,
+  },
+  {
+    id: 3,
+    itemTitle: "Home Inspection",
+    itemPrice: "$500",
+    itemDescription: "Recommended for due diligence",
+    oneCol: false,
+  },
+  {
+    id: 4,
+    itemTitle: "Property Insurance",
+    itemPrice: "$1,200",
+    itemDescription: "Annual cost for comprehensive property insurance",
+    oneCol: false,
+  },
+  {
+    id: 5,
+    itemTitle: "Mortgage Fees",
+    itemPrice: "Varies",
+    itemDescription:
+      "If applicable, consult with your lender for specific details",
+    oneCol: true,
+  },
+];
+
+export const monthlyConst: PriceDetailsType[] = [
+  {
+    id: 1,
+    itemTitle: "Property Taxes",
+    itemPrice: "$1,250",
+    itemDescription:
+      "Approximate monthly property tax based on the sale price and local rates",
+    oneCol: true,
+  },
+  {
+    id: 2,
+    itemTitle: "Homeowners' Association Fee",
+    itemPrice: "$300",
+    itemDescription: "Monthly fee for common area maintenance and security",
+    oneCol: true,
+  },
+];
+
+export const totalInitialCosts: PriceDetailsType[] = [
+  {
+    id: 1,
+    itemTitle: "Listing Price",
+    itemPrice: "$1,250,000",
+    itemDescription: "Listing Price",
+    oneCol: false,
+  },
+  {
+    id: 2,
+    itemTitle: "Additional Fees",
+    itemPrice: "$29,700",
+    itemDescription: "Additional Fees",
+    oneCol: false,
+  },
+  {
+    id: 3,
+    itemTitle: "Down Payment",
+    itemPrice: "$250,000",
+    itemDescription: "20%",
+    oneCol: false,
+  },
+  {
+    id: 4,
+    itemTitle: "Mortgage Amount",
+    itemPrice: "$1,000,000",
+    itemDescription: "If applicable",
+    oneCol: false,
+  },
+];
+
+export const monthlyExpenses: PriceDetailsType[] = [
+  {
+    id: 1,
+    itemTitle: "Property Taxes",
+    itemPrice: "Property Taxes",
+    itemDescription: "$1,250",
+    oneCol: false,
+  },
+  {
+    id: 2,
+    itemTitle: "Homeowners' Association Fee",
+    itemPrice: "$300",
+    itemDescription: "Homeowners' Association Fee",
+    oneCol: false,
+  },
+  {
+    id: 3,
+    itemTitle: "Mortgage Payment",
+    itemPrice: "Varies based on terms and interest rate",
+    itemDescription: "If applicable",
+    oneCol: false,
+  },
+  {
+    id: 4,
+    itemTitle: "Property Insurance",
+    itemPrice: "$100",
+    itemDescription: "Approximate monthly cost",
+    oneCol: false,
+  },
+];
