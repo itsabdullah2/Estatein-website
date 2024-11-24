@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="bg-gray10 border-b-2 border-gray15">
       <Banner />
-      <div className="text-white h-[99px] flex items-center justify-between px-4 sm:px-10 md:px-20 2xl:px-[10.125rem] relative overflow-x-hidden">
+      <div className="text-white h-[99px] flex items-center justify-between px-4 sm:px-10 md:px-20 2xl:px-[10.125rem] relative">
         <Link to="/">
           <img
             srcSet={`${logoMobile} 390w, ${logoLaptop} 1440w, ${logo} 1920w`}
