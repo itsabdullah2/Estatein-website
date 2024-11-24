@@ -13,7 +13,7 @@ import { Routes, Route } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div className="max-w-[120rem] bg-gray08">
+    <div className="max-w-[120rem] bg-gray08 overflow-x-hidden">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
