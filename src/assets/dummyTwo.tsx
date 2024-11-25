@@ -367,15 +367,15 @@ interface PriceDetailsType {
   itemTitle: string;
   itemPrice: string;
   itemDescription: string;
-  oneCol?: boolean;
+  fontWeight?: boolean;
 }
-export const additionalFees: PriceDetailsType[] = [
+
+export const additionalFeesPartOne: PriceDetailsType[] = [
   {
     id: 1,
     itemTitle: "Property Transfer Tax",
     itemPrice: "$25,000",
     itemDescription: "Based on the sale price and local regulations",
-    oneCol: false,
   },
   {
     id: 2,
@@ -383,108 +383,139 @@ export const additionalFees: PriceDetailsType[] = [
     itemPrice: "$3,000",
     itemDescription:
       "Approximate cost for legal services, including title transfer",
-    oneCol: false,
   },
+];
+export const additionalFeesPartTwo: PriceDetailsType[] = [
   {
     id: 3,
     itemTitle: "Home Inspection",
     itemPrice: "$500",
     itemDescription: "Recommended for due diligence",
-    oneCol: false,
   },
   {
     id: 4,
     itemTitle: "Property Insurance",
     itemPrice: "$1,200",
     itemDescription: "Annual cost for comprehensive property insurance",
-    oneCol: false,
   },
+];
+export const additionalFeesLastPart: PriceDetailsType[] = [
   {
     id: 5,
     itemTitle: "Mortgage Fees",
     itemPrice: "Varies",
     itemDescription:
       "If applicable, consult with your lender for specific details",
-    oneCol: true,
   },
 ];
 
-export const monthlyConst: PriceDetailsType[] = [
+export const monthlyCosts: PriceDetailsType[] = [
   {
     id: 1,
     itemTitle: "Property Taxes",
     itemPrice: "$1,250",
     itemDescription:
       "Approximate monthly property tax based on the sale price and local rates",
-    oneCol: true,
   },
   {
     id: 2,
     itemTitle: "Homeowners' Association Fee",
     itemPrice: "$300",
     itemDescription: "Monthly fee for common area maintenance and security",
-    oneCol: true,
   },
 ];
 
-export const totalInitialCosts: PriceDetailsType[] = [
+export const totalInitialCostsPartOne: PriceDetailsType[] = [
   {
     id: 1,
     itemTitle: "Listing Price",
     itemPrice: "$1,250,000",
     itemDescription: "Listing Price",
-    oneCol: false,
   },
   {
     id: 2,
     itemTitle: "Additional Fees",
     itemPrice: "$29,700",
     itemDescription: "Additional Fees",
-    oneCol: false,
   },
+];
+export const totalInitialCostsLastPart: PriceDetailsType[] = [
   {
     id: 3,
     itemTitle: "Down Payment",
     itemPrice: "$250,000",
     itemDescription: "20%",
-    oneCol: false,
   },
   {
     id: 4,
     itemTitle: "Mortgage Amount",
     itemPrice: "$1,000,000",
     itemDescription: "If applicable",
-    oneCol: false,
   },
 ];
 
-export const monthlyExpenses: PriceDetailsType[] = [
+export const monthlyExpensesPartOne: PriceDetailsType[] = [
   {
     id: 1,
     itemTitle: "Property Taxes",
     itemPrice: "Property Taxes",
     itemDescription: "$1,250",
-    oneCol: false,
   },
   {
     id: 2,
     itemTitle: "Homeowners' Association Fee",
     itemPrice: "$300",
     itemDescription: "Homeowners' Association Fee",
-    oneCol: false,
   },
+];
+export const monthlyExpensesLastPart: PriceDetailsType[] = [
   {
     id: 3,
     itemTitle: "Mortgage Payment",
     itemPrice: "Varies based on terms and interest rate",
     itemDescription: "If applicable",
-    oneCol: false,
+    fontWeight: true,
   },
   {
     id: 4,
     itemTitle: "Property Insurance",
     itemPrice: "$100",
     itemDescription: "Approximate monthly cost",
-    oneCol: false,
+  },
+];
+
+export const commonSpanStyles: string =
+  "text-[14px] 2xl:text-[18px] font-medium leading-[150%] text-gray60";
+export const commonContainerStyles: string =
+  "flex items-center justify-between xl:justify-start gap-3";
+export const commonPriceStyles: string =
+  "text-[18px] xl:text-xl 2xl:text-2xl font-semibold leading-[150%] text-white";
+export const commonDescriptionStyles: string =
+  " bg-gray10 border border-gray15 rounded-md xl:rounded-[28px] py-[6px] px-3 2xl:py-2 2xl:px-[14px] text-[14px] 2xl:text-[18px] font-medium leading-[150%] text-gray60";
+
+type FAQsType = {
+  id: number;
+  question: string;
+  answer: string;
+};
+
+export const faqs: FAQsType[] = [
+  {
+    id: 1,
+    question: "How do I search for properties on Estatein?",
+    answer:
+      "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+  },
+  {
+    id: 2,
+    question: "What documents do I need to sell my property through Estatein?",
+    answer:
+      "Find out about the necessary documentation for listing your property with us.",
+  },
+  {
+    id: 3,
+    question: "How can I contact an Estatein agent?",
+    answer:
+      "Discover the different ways you can get in touch with our experienced agents.",
   },
 ];
