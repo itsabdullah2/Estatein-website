@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 import {
-  additionalFeesLastPart,
-  additionalFeesPartOne,
-  additionalFeesPartTwo,
+  monthlyExpensesPartOne,
+  monthlyExpensesLastPart,
   commonContainerStyles,
   commonDescriptionStyles,
   commonPriceStyles,
   commonSpanStyles,
 } from "../../../assets/dummyTwo";
 
-const AdditionalFees = () => {
+const MonthlyExpenses = () => {
   return (
     <div className="flex flex-col gap-5 xl:gap-[30px] 2xl:gap-10 border border-gray15 rounded-xl p-5 xl:p-10 2xl:p-[50px]">
       <div className="flex items-center justify-between">
@@ -23,9 +22,9 @@ const AdditionalFees = () => {
           Learn More
         </Link>
       </div>
-      <div className="flex flex-col border-y border-gray15 py-5 xl:py-[30px] 2xl:py-10">
+      <div className="flex flex-col border-t border-gray15 pt-5 xl:pt-[30px] 2xl:pt-10">
         <div className="border-b border-gray15 grid grid-cols-1 xl:grid-cols-2 gap-5 pb-5 xl:pb-[30px] 2xl:pb-10">
-          {additionalFeesPartOne.map((item) => (
+          {monthlyExpensesPartOne.map((item) => (
             <div
               key={item.id}
               className="flex flex-col gap-[10px] xl:gap-3 2xl:gap-[16px] first:border-b xl:first:border-r xl:first:border-b-0 first:pb-5 xl:pb-0 border-gray15"
@@ -41,14 +40,20 @@ const AdditionalFees = () => {
           ))}
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 pt-5 xl:pt-[30x] 2xl:pt-10">
-          {additionalFeesPartTwo.map((item) => (
+          {monthlyExpensesLastPart.map((item) => (
             <div
               key={item.id}
               className="flex flex-col gap-[10px] xl:gap-3 2xl:gap-[16px]first:border-b xl:first:border-r xl:first:border-b-0 pb-5 xl:pb-0 border-gray15"
             >
               <span className={`${commonSpanStyles}`}>{item.itemTitle}</span>
               <div className={`${commonContainerStyles}`}>
-                <h4 className={`${commonPriceStyles}`}>{item.itemPrice}</h4>
+                <h4
+                  className={`${commonPriceStyles} ${
+                    item.fontWeight ? "font-normal" : ""
+                  }`}
+                >
+                  {item.itemPrice}
+                </h4>
                 <p className={`${commonDescriptionStyles}`}>
                   {item.itemDescription}
                 </p>
@@ -57,24 +62,8 @@ const AdditionalFees = () => {
           ))}
         </div>
       </div>
-      <div className="">
-        {additionalFeesLastPart.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col gap-[10px] xl:gap-3 2xl:gap-[16px]"
-          >
-            <span className={`${commonSpanStyles}`}>{item.itemTitle}</span>
-            <div className={`${commonContainerStyles}`}>
-              <h4 className={`${commonPriceStyles}`}>{item.itemPrice}</h4>
-              <p className={`${commonDescriptionStyles}`}>
-                {item.itemDescription}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };
 
-export default AdditionalFees;
+export default MonthlyExpenses;

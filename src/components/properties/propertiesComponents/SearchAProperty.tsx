@@ -23,7 +23,7 @@ const SearchAProperty = () => {
           <input
             type="search"
             placeholder="Search For A Property"
-            className="flex-1 placeholder:text-gray15 focus:placeholder:opacity-0 placeholder:duration-200 bg-transparent text-2xl font-medium outline-none caret-purple60 text-white"
+            className="flex-1 text-base placeholder:text-gray15 focus:placeholder:opacity-0 placeholder:duration-200 bg-transparent xl:text-xl 2xl:text-2xl font-medium outline-none caret-purple60 text-white"
           />
           <button className="flex items-center gap-[6px] xl:gap-2 py-[14px] px-5 xl:py-[18px] xl:px-6 rounded-[10px] bg-purple60 text-white hover:bg-purple65 duration-200">
             <IoSearch size={25} />
